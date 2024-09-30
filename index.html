@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>翻牌記憶遊戲</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- 引入 SweetAlert2 的 CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+<body>
+
+    <div id="controls">
+        <h1>翻牌記憶遊戲</h1>
+        <select id="themeSelector">
+            <option value="AZUR">AZUR LANE主題</option>
+            <option value="HOLO">HOLO LIVE主題</option>
+        </select>
+        <button id="startButton">開始遊戲</button>
+    </div>
+
+ <!-- 遊戲區域，包含佔位圖片 -->
+
+    <div class="container" id="cardContainer">
+        <div id="placeholderImage">
+            <img id="themeImage" src="" alt="遊戲開始前的圖片" />
+        </div>
+    </div>
+
+    <!-- 通關時間紀錄區域 -->
+    <div id="gameInfo">
+        <h3>歷史通關時間紀錄</h3>
+        <ul id="timeRecords"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
